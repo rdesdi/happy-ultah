@@ -1,5 +1,5 @@
 
-const elem = document.documentElement;
+var elem = document.documentElement;
 
 /* View in fullscreen */
 function openFullscreen() {
@@ -322,7 +322,8 @@ function mulai() {
   document.querySelector(".open").style = "opacity: 0;";
   setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000);
   resolveFetch().then(animationTimeline());
+  openFullscreen();
      }
 
      resolveFetch();
-openFullscreen();
+
