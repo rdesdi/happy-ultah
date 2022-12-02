@@ -14,7 +14,7 @@ body {
 
 
 .open {
-  background-image: linear-gradient(#ff71c0, #b983ff); 
+  background-image: url('/img/bg.png'); 
   height: 100vh; 
   width: 100vw; 
   position: fixed; 
