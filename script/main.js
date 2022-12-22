@@ -334,13 +334,9 @@ function ab() {
    document.getElementById('audio-2').addEventListener("canplay", (event) => {
   document.getElementById('audio-2').play();
 });
-document.querySelector(".open").style = "opacity: 1;";
-    openFullscreen();
   } else {
     document.getElementById('audio-2').addEventListener("canplay", (event) => {
   document.getElementById('audio-2').play();
 });
-document.querySelector(".open").style = "opacity: 1;";
-openFullscreen();
   }
 }
