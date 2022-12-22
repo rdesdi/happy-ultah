@@ -331,11 +331,11 @@ function mulai() {
 
 function ab() {
 	  if (confirm(" Welcome, Hope you like it 😉") == true) {
-   document.getElementById('audio-2').addEventListener("canplay", (event) => {
+   document.getElementById('audio-2').addEventListener("canplaythrough", (event) => {
   document.getElementById('audio-2').play();
 });
   } else {
-    document.getElementById('audio-2').addEventListener("canplay", (event) => {
+    document.getElementById('audio-2').addEventListener("canplaythrough", (event) => {
   document.getElementById('audio-2').play();
 });
   }
