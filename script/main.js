@@ -318,12 +318,29 @@ const resolveFetch = () => {
 
 
 function mulai() {
+	document.getElementById('audio-2').pause();
   document.getElementById('audio-1').play();
   document.querySelector(".open").style = "opacity: 0;";
   setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000);
   resolveFetch().then(animationTimeline());
   openFullscreen();
      }
-
+     
      resolveFetch();
+     ab() ;
 
+function ab() {
+	  if (confirm(" Welcome, Hope you like it 😉") == true) {
+   document.getElementById('audio-2').addEventListener("canplay", (event) => {
+  document.getElementById('audio-2').play();
+});
+document.querySelector(".open").style = "opacity: 1;";
+    openFullscreen();
+  } else {
+    document.getElementById('audio-2').addEventListener("canplay", (event) => {
+  document.getElementById('audio-2').play();
+});
+document.querySelector(".open").style = "opacity: 1;";
+openFullscreen();
+  }
+}
